@@ -1,0 +1,31 @@
+.modal{
+    justify-content: center;
+}
+.modal-title{
+    position: relative;
+    left: 25%;
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.modal-content{
+    height: 20vh;
+}
+
+.modal-body{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.modal-footer{
+    margin-top: 15px;
+    height: 5vh;
+}
+
+.modal-footer button{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 60px;
+}

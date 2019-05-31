@@ -1,0 +1,324 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    text-align: center;
+    background: #d4d4d4;
+    height: 100vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100vh;
+    }
+}
+
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+}
+
+.nav-item a{
+    font-size: 20px;
+    text-align: center;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+    .navbar-toggler-icon i{
+        font-size: 25px;
+    }
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+.container-fluid{
+    width: 100%;
+}
+
+#heading{
+    text-align: center;
+    margin: 20px;
+}
+
+.tasks{
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    height: auto;
+    margin-top: 60px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: #4e4848;
+}
+
+.main .tasks{
+    justify-content: center;
+    height: auto;
+}
+
+.task-box{
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 2px #e98268;
+    text-decoration: none;
+    background: #89bfe9;
+    margin: 30px;
+    text-align: center;
+    height: 7vh;
+}
+
+
+.main .tasks li{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 1.5em;
+    height: 4vh;
+    margin-bottom: 5px;
+    margin-top: 6px;
+    text-transform: capitalize;
+}
+
+.task-box hr{
+    width: 1100px;
+}
+
+.task-box i {
+    font-size: 35px;
+    margin: 5px;
+}
+
+
+.tasks a i:hover{
+    color: rgb(224, 85, 43);
+}
+
+
+.task-box .row{
+    display: flex;
+    flex-direction: row;
+}
+
+#tasks {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background: #1c611cda;
+    height: 5.5vh;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 2px rgb(192, 94, 2);
+    text-align: center;
+}
+
+#tasks .col-md-6 h4{
+    color: rgb(247, 238, 238);
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+#subTasks {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #3b68c9da;
+    height: 5vh;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 2px rgb(211, 177, 24);
+}
+
+#subTasks h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 6px;
+    text-transform: capitalize;
+    color:  rgb(247, 238, 238);
+}
+
+
+
+
+@media (max-width: 991px){
+    #heading{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 767px){
+    #heading{
+        font-size: 30px;
+    }
+
+    .tasks{
+        margin: 75px;
+        justify-content: center;
+    }
+
+    .task-box i{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .task-box{
+        height: 20vh;
+    }
+
+    .task-box div a li{
+        text-align: center;
+    }
+
+    #tasks{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    #tasks {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 55px;
+        margin-left: 55px;
+        height: 12vh;
+    }
+
+    #tasks .col-md-6 h4{
+        font-weight: 200;
+        font-size: 24px;
+        margin: 3px;
+    }
+
+    #subTasks {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        margin-left: 80px;
+        height: 10vh;
+    }
+    
+    #subTasks h3{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+}
+
+@media (max-width: 520px){
+    .tasks{
+        margin: 50px;
+        justify-content: center;
+    }
+
+    #heading{
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,210 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    text-align: center;
+    background: #d4d4d4;
+    height: 100vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100vh;
+    }
+}
+
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+
+.container{
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container #sentAndReceived{
+    justify-content: center;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#sentAndReceived h2{
+    font-weight: 700;
+}
+
+#recieved{
+    margin-top: 20px;
+    margin-left: 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border: 1px solid black;
+    background: #2f7db9;
+    box-shadow: 0px 0px 2px 2px orange;
+}
+
+#recieved h4{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+#recieved h3{
+    margin: 5px;
+}
+
+#statusDrop{
+    text-transform: capitalize;
+    color: rgb(29, 29, 31);
+    margin-top: 6px;
+    margin-bottom: 5px;
+    height: 3.6vh;
+}
+
+#userDecision .col-md-6 button {
+    border: 1px solid black;
+}
+
+#userDecision button{
+    border: 1px solid black;
+}
+
+@media (max-width: 767px){
+    .container #sentAndReceived{
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    #sentAndReceived h2{
+        margin: 5px;
+    }
+}

@@ -1,0 +1,196 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    text-align: center;
+    background: #d4d4d4;
+    height: 100vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100vh;
+    }
+}
+
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+.container-fluid{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.wrapper{
+    border: 1px solid black;
+    margin: 10%;
+    height: 18vh;
+    background: #89bfe9;
+    box-shadow: 0px 0px 5px 2px #e98268;
+    align-items: center;
+}
+
+.wrapper h2{
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.wrapper p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.wrapper .row {
+    justify-content: center;
+}
+
+.wrapper .row button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.wrapper .row button i{
+    align-items:  center;
+    font-size: 18px;
+    margin: 5px;
+    
+}
+
+@media (max-width: 975px){
+    .wrapper{
+        border: 1px solid black;
+        margin: 10%;
+        height: 20vh;
+        align-items: center;
+    }
+}
+

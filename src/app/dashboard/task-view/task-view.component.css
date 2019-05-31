@@ -1,0 +1,365 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    text-align: center;
+    background: #d4d4d4;
+    height: 100vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100vh;
+    }
+}
+
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+.container{
+    margin-top: 30px;
+}
+
+.listname{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+
+.container form .row{
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form .row input{
+    width: 250px;
+    height: 5vh;
+    font-size: 20px;
+}
+
+form .row .btn{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+form .row .btn:hover{
+    font-weight: 650;
+}
+
+
+#tasks {
+    position: relative;
+    left: 5%;
+    top: 10%;
+    flex-flow: row;
+    width: 850px;
+    margin-top: 50px;
+    background: #1c611cda;
+    height: 8vh;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 2px rgb(192, 94, 2);
+}
+
+#subTasks{
+    position: relative;
+    left: 20%;
+    flex-flow: row;
+    width: 650px;
+    margin-top: 50px;
+    background: #3b68c9da;
+    height: 5vh;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 2px rgb(211, 177, 24);
+}
+
+#subTasks h2{
+    text-align: start;
+    margin-left: 15px;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+#tasks li{
+    position: relative;
+    text-decoration: none;
+    color: rgb(247, 238, 238);
+    font-size: 30px;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.editTask button {
+    background: transparent;
+    margin: 8px;
+    height: 3vh;
+}
+
+.editTask button i{
+    font-size: 20px;
+}
+
+.editSubTask button {
+    background: transparent;
+    margin: 8px;
+    height: 3vh;
+}
+
+.editSubTask     button i{
+    font-size: 20px;
+}
+
+#tasks a i{
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 12px;
+    color: rgb(21, 46, 78);
+    font-size: 27px;
+    text-align: right;
+}   
+
+#subTasks a i{
+    position: relative;
+    left: 27px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 5px;
+    color: rgb(8, 22, 39);
+    font-size: 25px;
+    justify-content: flex-end;
+}
+
+#tasks hr{
+    color: black;
+}
+
+#tasks a i:hover{
+    color: rgb(17, 16, 14);
+}
+
+#subTasks a i:hover{
+    color: rgb(39, 0, 180);
+}
+
+#statusName{
+    position: relative;
+    right: 50px;
+    margin-top: 10px;
+    color: rgb(247, 238, 238);
+}
+.status{
+    display: flex;
+}
+#status{
+    position: relative;
+    right: 75px;
+    color: aqua;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#statusDrop{
+    position: relative;
+    right: 55px;
+    color: rgb(29, 29, 31);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#subTasks .status{
+    display: flex;
+}
+
+#subTasks #statusName{
+    margin-top: 6px;
+    color: rgb(247, 238, 238);
+    font-size: 18px;
+}
+
+#subTasks #status{
+    color: aqua;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+#subTasks #statusDrop{
+    color: rgb(29, 29, 31);
+    margin-left: 10px;
+    margin-top: 6px;
+    height: 3vh;
+}
+
+#subTasks .editStatus i{
+    font-size: 15px;
+    color: black;
+ }
+
+.editStatus i{
+   position: relative;
+   right: 63px;
+   font-size: 15px;
+   color: black;
+}
+
+#tasks #hello{
+    position: relative;
+    margin: 20px;
+}
+
+
+@media (max-width: 767px){
+    #tasks {
+        width: 450px;
+        margin-top: 100px;
+    }
+
+    #tasks li{
+        font-size: 27px;
+    }
+
+    #tasks a i{
+        margin-right: 2px;
+    }
+    .status{
+        flex-direction: row;
+    }
+
+    #statusName{
+        color: rgb(39, 38, 38);
+    }
+
+    #status{
+        color: rgb(71, 94, 224);
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+}

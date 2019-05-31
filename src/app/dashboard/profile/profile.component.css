@@ -1,0 +1,355 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    background: #d4d4d4;
+    height: 120vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 110vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 130vh;
+    }
+}
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 991px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+/**Form Css start*/
+
+#goBack{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(51, 51, 51);
+    width: 100px;
+    height: 5vh;
+    font-size: 18px;
+    left: 200px;
+}
+
+#goBack:hover{
+    background: #535353;
+    color: white;
+}
+
+@media (max-width: 767px){
+    #goBack{
+        position: relative;
+        justify-items: center;
+        left: 0px;
+    }
+}
+
+.main .row button{
+    justify-content: right;
+}
+
+.content{
+    margin-bottom: 30px;
+    margin-top: 55px;
+}
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* -- Link to Tutorialzine -- */
+
+.tz-link{
+	text-decoration: none;
+	color: #fff !important;
+	font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+	color: #da431c;
+}
+
+.form-register{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-register-with-email{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 130px;
+    text-align: center;
+}
+
+.form-register-with-email .form-white-background{
+    width: 600px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, 0.1);
+    padding: 60px 80px;
+    margin-bottom: 35px;
+}
+
+.form-register-with-email .form-row{
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.form-register-with-email .form-title-row{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-register-with-email h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #394147;
+    font-size: 24px;
+    padding: 0 20px 15px;
+    border-bottom: 2px solid #2f7db9;
+    margin: 0;
+}
+
+.form-register-with-email .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #3a3939;
+    width: 125px;
+    text-align: right;
+    padding-right: 25px;
+    font-size: 15px;
+}
+
+.form-register-with-email input{
+    color:  #3a3939;
+    box-sizing: border-box;
+    width: 230px;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #d4d4d4;
+}
+
+
+.form-register-with-email button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #4f88b3;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.08);
+    padding: 15px 35px;
+    border: 0;
+    margin: 55px auto 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-register-with-email .form-log-in-with-existing{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    word-spacing: 5px;
+    font-weight: normal;
+    color: #2d3826;
+    background-color: #d6f0c3;
+    border: 2px solid green;
+    width: auto;
+}
+
+@media (max-width: 460px){
+    .form-register-with-email .form-log-in-with-existing{
+        padding: 4px 5px;
+        word-spacing: 3px;
+        font-size: 19px;
+    }
+
+    .form-register-with-email .form-row > label span{
+        font-size: 18px;
+    }
+
+    .main{
+        height: 110vh;
+    }
+}
+
+
+
+/*	Making the form responsive. Remove these media queries
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 900px) {
+
+    .form-register{
+        margin: 20px auto;
+    }
+
+    .form-register-with-email{
+        position: relative;
+        display: block;
+        margin: 0;
+    }
+
+    .form-register-with-email .form-white-background{
+        margin: 0 auto 32px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .form-register-with-email .form-white-background{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .form-register-with-email .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .form-register-with-email input{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.form-white-background a{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.form-white-background a:hover{
+    color: #2f7db9;
+}
+
+/**form css end*/
+

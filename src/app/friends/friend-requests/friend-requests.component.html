@@ -1,0 +1,79 @@
+<div class="main">
+  <nav class="navbar navbar-expand-lg">
+    <h1><a [routerLink]="['/dashboard']" class="navbar-brand">Task Ready</a></h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/dashboard']">Home </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            User<span class="sr-only">(current)</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/profile']">Profile info</a>
+            <a class="dropdown-item" [routerLink]="['/all/todo/view']">View All Tasks</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/change/password']">Change Password</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Friends
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/add/friends']">Make Friends</a>
+            <a class="dropdown-item" [routerLink]="['/view/all/friends']">Friends List</a>
+            <a class="dropdown-item" [routerLink]="['/friend/requests']">Friend Requests</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/notifications']">Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()">SignOut</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content" >
+    <div class="container">
+      <div class="row" id="sentAndReceived">
+        <div class="col-md-6">
+          <a [routerLink]="['/friend/requests']"><h2>Received</h2></a>
+        </div>
+        <div class="col-md-6">
+          <a [routerLink]="['/all/requests']"><h2>All Requests</h2></a>
+        </div>
+      </div>
+      <div class="row"  *ngIf="receivedRequests.length>0">
+        <div class="col-md-4" id="recieved" *ngFor="let requests of receivedRequests">
+          <h4>Friend Request from </h4>
+          <h3>{{requests.friendName}}</h3>
+          <div class="row" id="userDecision">
+            <div class="col-md-4">
+              <button class="btn" (click)="acceptFriend(requests.friendId)"><i class="fa fa-user-plus" aria-hidden="true">Accept</i></button>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+              <select [(ngModel)]="requests.requestStatus" name="requestStatus" id="statusDrop">
+                <option *ngFor='let requestStatus of allResponseStatus' [value]="requestStatus">{{requestStatus}}</option>
+              </select> 
+              <button class="btn" (click)="changeRequestStatus(requests.requestStatus, requests.friendId)"><i class="fa fa-check" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="receivedRequests.length==0">
+        <div class="col-md-12">
+          <h4>{{noRequests}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner bdOpacity = 0.9 bdColor = "#333" size = "medium" color = "#fff" type = "ball-pulse" [fullScreen]="true">
+    <p style="color: white" > Loading... </p>
+    </ngx-spinner>

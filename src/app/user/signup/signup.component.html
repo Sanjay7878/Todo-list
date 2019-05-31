@@ -1,0 +1,64 @@
+<div class="main">
+  <nav class="navbar">
+    <h1><a href="#" class="navbar-brand">Task Ready</a></h1>
+  </nav>
+  <div class="main-content">
+      <!-- You only need this form and the form-register.css -->
+      <form class="form-register" method="post" #signUpUserForm="ngForm">
+        <div class="form-register-with-email">
+          <div class="form-white-background">
+            <div class="form-title-row">
+              <h1>Create an account</h1>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>First name</span>
+                <input type="text" name="firstName" [(ngModel)]="firstName" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Last name</span>
+                <input type="text" name="lastName" [(ngModel)]="lastName" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Country</span>
+                <input type="text" name="location" [(ngModel)]="country"  required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Country Code</span>
+                <input type="text" name="location" [(ngModel)]="countryCode"  required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Mobile Number</span>
+                <input type="tel" name="mobileNumber"  [(ngModel)]="mobileNumber" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                  <span>Email</span>
+                  <input type="email" name="email" [(ngModel)]="email" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Password</span>
+                <input type="password" name="password" [(ngModel)]="password" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <button type="submit" [disabled]="signUpUserForm.invalid" (click)="signupFunction()">Register</button>
+            </div>
+          </div>
+            <a class="form-log-in-with-existing" [routerLink]="['/login']">Already have an account? Login here &rarr;</a>
+        </div>
+      </form>
+  </div>
+</div>
+  

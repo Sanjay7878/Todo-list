@@ -1,0 +1,220 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    background: #d4d4d4;
+    height: 100vh;
+}
+
+@media (max-width: 900px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100vh;
+    }
+}
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+.container{
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#list{
+    position: relative;
+    left: 200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#friendHeader{
+    margin: 15px;
+    border: 3px solid black;
+    background: #535353;
+    color: antiquewhite;
+}
+
+#friendHeader h2{
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#friendHeader h3, #friendHeader h5{
+    margin: 5px;
+}
+#friendHeader h2:hover, #friendHeader h3:hover, #friendHeader h5:hover{
+    color: rgb(211, 152, 25);
+}
+.btn{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border: 1px solid antiquewhite;
+    align-items: flex-end;
+    width: 150px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 4px 4px rgb(228, 84, 108);
+    color: rgb(211, 152, 25);
+}
+
+
+/**
+Modal Css
+*/
+
+.modal-title{
+    position: relative;
+    left: 25%;
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+    color: brown;
+}
+
+.modal-content{
+    height: 20vh;
+}
+
+.modal-body{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.modal-footer{
+    margin-top: 15px;
+    height: 5vh;
+}
+
+.modal-footer button{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 60px;
+}

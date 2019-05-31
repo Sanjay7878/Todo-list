@@ -1,0 +1,38 @@
+<div class="main">
+    <nav class="navbar">
+        <h1><a href="#" class="navbar-brand">Task Ready</a></h1>
+    </nav>
+    <div class="main-content">
+        <!-- You only need this form and the form-register.css -->
+        <form class="form-register" method="post" action="#">
+            <div class="form-register-with-email">
+            <div class="form-white-background">
+                <div class="form-title-row">
+                <h1>Login Here</h1>
+                </div>
+                <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" [(ngModel)]="email" required>
+                </label>
+                </div>
+                <div class="form-row">
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" [(ngModel)]="password" required>
+                </label>
+                </div>
+                <a [routerLink]="['/forgot-password-email']">Forgot Password?</a>
+                <div class="form-row">
+                <button type="submit" (click)="loginUser()">Login</button>
+                <ngx-spinner bdOpacity = 0.9 bdColor = "#333" size = "medium" color = "#d4d4d4" type = "ball-pulse" [fullScreen]="true">
+                <p style="color: white" >Loading... </p>
+                </ngx-spinner>
+                </div>
+            </div>
+                <a class="form-log-in-with-existing" [routerLink]="['/signup']">Do not have an account? Register here &rarr;</a>
+            </div>
+        </form>
+    </div>
+</div>
+        

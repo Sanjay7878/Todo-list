@@ -1,0 +1,458 @@
+/** NavBar Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    top: 0px;
+    background: #e98268;
+    height: 12vh;
+}
+
+.navbar-brand{
+    font-family: 'Audiowide', cursive;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #535353;
+}
+.navbar-brand:hover{
+    color: #2f7db9;
+}
+
+.main{
+    text-align: center;
+
+}
+
+
+
+@media (max-width: 900px){
+    .main{
+        height: 120vh;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 120vh;
+    }
+}
+
+
+.navbar-toggler{
+    border: 1px solid black;
+    background: white;
+    width: 50px;
+    height: 5vh;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon i{
+    background: white;
+    font-size: 30px;
+    color: #7e7e7e;
+    text-align: center;
+    margin: 1.5px;
+}
+
+.collapse ul li a{
+    justify-items: flex-end;
+    margin-left: 35px;
+    right: 0vw;
+}
+
+.nav-item a{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 0px;
+    color: #05487a;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+.dropdown-menu a{
+    text-align: left;
+    margin-left: 0px;
+    width: 180px;
+}
+
+.dropdown-menu a:hover{
+    color: #1898fa;
+}
+
+@media (max-width: 1000px){
+    .dropdown-menu{
+        position: relative;
+        width: 260px;
+        text-align: left;
+        left: 35vw;
+    }
+
+    .dropdown-menu a{
+        text-align: left;
+        margin-left: 0px;
+        width: 220px;
+    }
+
+    .nav-item a{
+        font-size: 25px;
+    }
+
+    .main{
+        height: 120vh;
+    }
+}
+
+@media(max-width: 991px){
+    .collapse{
+        background: #7e7e7e;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .dropdown-menu{
+        position: relative;
+        left: 25vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .dropdown-menu{
+        position: relative;
+        left: 17vw;
+    }
+
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px){
+    .dropdown-menu{
+        position: relative;
+        left: 7vw;
+    }
+}
+/** NavBar css end*/
+
+.container-fluid{
+    text-align: center;
+    position: relative;
+}
+
+#user-name{
+    text-transform: capitalize;
+    margin: 10px;
+    font-weight: 400;
+}
+
+#user-welcome{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.container-fluid .row button{
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 200px;
+    height: 5vh;
+    font-size: 20px;
+    background: #ffffff;
+    margin-left: 10%;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.newTask{
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    width: 700px;
+    background: #fafafa;
+    height: auto;
+}
+#closeCreate {
+    align-items: right;
+}
+.newTask .btn{
+    background: #9e9d9d;
+}
+.form-check-input{
+    margin-top: 5px;
+}
+.form-check-label{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+hr{
+    background: black;
+    width: 100vw;
+}
+
+
+.tasks{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    left: 120px;
+    top: 100px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: #4e4848;
+}
+
+
+
+.main .tasks{
+    justify-content: center;
+    height: auto;
+}
+
+
+.task-box{
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 2px #e98268;
+    text-decoration: none;
+    background: #89bfe9;
+    margin: 30px;
+    text-align: center;
+}
+
+.main .tasks ul{
+    text-decoration: none;
+}
+
+.main .tasks ul li{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 1.5em;
+    height: 4vh;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+
+.task-box hr{
+    width: 1100px;
+}
+
+.task-box i {
+    font-size: 25px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+#create{
+    width: 100px;
+    margin: 10px;
+    height: 6vh;
+}
+
+#visibility{
+    justify-content: center;
+}
+
+#visibility h2{
+    text-align: center;
+    border: 1px solid snow;
+    color: snow;
+    width: 100px;
+    margin: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px orange;
+    font-size: 20px;
+}
+
+#visibility h2:hover{
+    box-shadow: 0px 0px 2px 2px rgb(219, 93, 93);
+}
+
+.tasks a i:hover{
+    color: rgb(224, 85, 43);
+}
+
+#todoDeleteModal{
+    padding: 350px;
+    text-align: center;
+}
+
+.modal-title{
+    position: relative;
+    left: 25%;
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.modal-content{
+    height: 20vh;
+}
+
+.modal-body{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.modal-footer{
+    margin-top: 15px;
+    height: 5vh;
+}
+
+.modal-footer button{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 60px;
+}
+
+
+
+.task-box .row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media(max-width: 515px){
+    .main{
+        height: 150vh;
+    }
+}
+
+@media (max-width: 1500px){
+    .tasks {
+        position: relative;
+        left: 50px;
+    }
+
+    .container-fluid{
+        margin: 0px;
+    }
+
+}
+
+@media(max-width: 1330px){
+    .tasks{
+        margin: 5%;
+    }
+
+    .task-box hr{
+        width: 800px;
+    }
+
+     .container-fluid{
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .tasks{
+        margin: 3%;
+    }
+
+    .container-fluid{
+        margin: 3%;
+    }
+}
+
+@media (max-width: 1000px){
+    .tasks {
+        position: relative;
+        left: 0px;
+    }
+
+    .container-fluid{
+        margin: 0px;
+    }
+
+    #user-name{
+        font-size: 40px;
+    }
+
+    #user-welcome{
+        margin: 10px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 990px){
+
+    .tasks{
+        left: 50px;
+    }
+
+    .task-box{
+        margin: 4px;
+    }
+
+    .main .tasks ul li{
+        font-size: 1.5em;
+        height: 4vh;
+    }
+}
+
+@media(max-width: 880px){
+    .tasks{
+        left: 50px;
+    }
+
+    .task-box .row i {
+        font-size: 25px;
+    }
+
+    .main .tasks ul li{
+        font-size: 1.3em;
+    }
+}
+
+@media(max-width: 770px){
+    .tasks{
+        left: 30px;
+    }
+
+    .task-box .row i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 580px){
+    .container-fluid{
+        width: 85vw;
+    }
+
+    .newTask{
+        padding: 2px 5px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 480px){
+    .newTask{
+        padding: 0px;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-right: 5%;
+    }
+}
