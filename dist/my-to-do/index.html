@@ -23,45 +23,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script>
     $(document).ready(()=>{
-      $('.newTask').hide();
-      
-      $('.editTask').hide()
-      $('.editSubTask').hide()
 
-      $('#createTask').click(()=>{
-        $('.newTask').slideToggle()
-      })
-      
       let click = 0
       $('.navbar-toggler').click(()=>{
         if(click === 0){
           $('.content').css('top', '200px').css('position', 'relative')
-          click+=1
+          click++
         } else if(click%2 == 0){
           $('.content').css('top', '200px').css('position', 'relative')
-          click+=1
+          click++
         } else if(click%2 !== 0){
           $('.content').css('top', '0px').css('position', 'relative')
-          click+=1
+          click++
         }
       })
-
-      $('#closeCreate').click(()=>{
-        $('.newTask').hide()
-      })
-
-      $('#create').click(()=>{
-        $('.newTask').hide()
-      })
-
-      $('#createSubTask').hide()
 
       $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
       })
-      
+
     })
     </script>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.d9453fb2d504b0a47535.js" nomodule></script><script type="text/javascript" src="polyfills.2b767098c09ef2304dbf.js"></script><script type="text/javascript" src="scripts.859e64cef1ef944f8beb.js"></script><script type="text/javascript" src="main.f8dc058649b261b0a9b0.js"></script></body>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.d9453fb2d504b0a47535.js" nomodule></script><script type="text/javascript" src="polyfills.2b767098c09ef2304dbf.js"></script><script type="text/javascript" src="scripts.859e64cef1ef944f8beb.js"></script><script type="text/javascript" src="main.7cdfce561c60eb5f64c1.js"></script></body>
 </html>
