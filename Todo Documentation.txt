@@ -1,0 +1,49 @@
+My-ToDo-List Project(Task Ready)
+
+This is a basic toDo List app for all the Users. 
+Users will be first directed to the signup page.
+Users can register for free and start using the app. 
+If in-case the user forgets the password, user has an option to reset the password. User will be sent a password rest link on his registered mail Id. Upon clicking user can reset the password
+Users can create daily todo list.
+Users can set if the daily todo List needs to be public of private
+Users can also create a task for a particular todo list.
+And also create a subtask under a particaulr task in order to make thair thier todo tracking easy.Users have the options to change the status, edit and delete.
+
+Friends Module, is much more fun for the users. Users can send friend request to all the other users registered in the application.
+The user at the other end who received a friend request can either accept or decline, block or keep the request in pending.
+Upon the decions of the user at the other end. User will receive a notification in the notification option under friends dropdown tab.
+Users can see sent notifications as well as received notifications.
+Users also have a options to see received friend requests and sent requests.
+If the user on the other end has accepted the request. Both the users will be able to view each others profile. 
+User can see his friend's all public todo list and can also edit and change status.
+
+Project URL: http://mytodo.sanjayinfotechy.com
+API Documentation: http://todoapi.sanjayinfotechy.com
+Socket.IO Events Documentation: http://todoevents.sanjayinfotechy.com
+Project Git Repository: https://github.com/Sanjay7878/Todo-list
+
+
+Documentation
+
+All the APIs and Events are well documented using npm module apiDoc 
+•	APIDOC - APIDOC of ToDo List App backend. 
+• 	EventDoc - EventDoc of ToDo List App backend. 
+•	Comments – comments are written for every function
+
+
+Built With
+
+•	Angular - The web framework used for Frontend Design 
+•	NPM - Most of the modules are used 
+•	apiDoc - NPM module to create the apiDoc and eventDoc
+
+
+Authors
+
+•	Initial work – Sanjay C 
+•	Problem Statement - Edwisor 
+
+
+Acknowledgments 
+
+Thanks for Edwisor to review this application. I would like to thank my friends, colleagues for supporting me to develop and deploy this Application.
